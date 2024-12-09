@@ -1,6 +1,5 @@
 <div class="app-container">
   <nav class="sidebar">
-    <!-- This will eventually house your quick access & bookmarks -->
     <div class="quick-access-placeholder">
       <p>Quick Access</p>
     </div>
@@ -10,17 +9,12 @@
     <header class="toolbar">
       <div class="breadcrumb-placeholder">Home > Documents</div>
       <div class="actions-placeholder">
-        <app-icon></app-icon>
+        <app-icon> </app-icon>
       </div>
     </header>
 
     <section class="content-area">
-      <!-- This will be your file-list component later -->
-      <div class="file-grid-placeholder">
-        <div class="file-item" *ngFor="let i of [1, 2, 3, 4, 5]">
-          File {{ i }}
-        </div>
-      </div>
+      <app-file-grid-view />
     </section>
   </main>
 </div>

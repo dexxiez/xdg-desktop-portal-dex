@@ -1,14 +1,18 @@
 @use "../../../styles/abstracts/variables" as v;
 
 .app-container {
+  position: relative;
   display: grid;
   grid-template-columns: 240px 1fr;
-  height: 100vh;
+  min-height: 100vh;
   background: v.$background-primary;
   color: v.$gray-100;
 }
 
 .sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
   background: v.$background-secondary;
   padding: v.$spacing-md;
   border-right: 1px solid v.$gray-500;
@@ -20,6 +24,9 @@
 }
 
 .toolbar {
+  position: sticky;
+  top: 0;
+  height: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;

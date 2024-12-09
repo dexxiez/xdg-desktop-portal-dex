@@ -20,6 +20,9 @@
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
             "styles": ["src/styles/main.scss"],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src"]
+            },
             "inlineStyleLanguage": "scss",
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/assets"]
