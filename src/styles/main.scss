@@ -3,6 +3,7 @@
 
 // Base styles
 @use "base/reset";
+@use "base/fonts";
 @use "base/typography";
 
 // Example usage with namespaces
@@ -29,6 +30,6 @@ a {
   color: v.$gray-100;
 }
 
-.button {
-  background: v.$accent-primary;
+.icon {
+  font-family: v.$font-nerd;
 }

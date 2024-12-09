@@ -1,0 +1,53 @@
+@use "../../../styles/abstracts/variables" as v;
+
+.app-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  height: 100vh;
+  background: v.$background-primary;
+  color: v.$gray-100;
+}
+
+.sidebar {
+  background: v.$background-secondary;
+  padding: v.$spacing-md;
+  border-right: 1px solid v.$gray-500;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: v.$spacing-md;
+  background: v.$background-secondary;
+  border-bottom: 1px solid v.$gray-500;
+}
+
+.content-area {
+  flex: 1;
+  padding: v.$spacing-md;
+  overflow: auto;
+}
+
+.file-grid-placeholder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: v.$spacing-md;
+}
+
+.file-item {
+  padding: v.$spacing-md;
+  background: v.$background-tertiary;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background: v.$accent-muted;
+  }
+}
