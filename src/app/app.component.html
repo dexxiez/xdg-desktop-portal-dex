@@ -1,0 +1,7 @@
+<main class="container">
+  <form class="row" (submit)="greet($event, greetInput.value)">
+    <input #greetInput id="greet-input" placeholder="Enter a name..." />
+    <button class="button" type="submit">Greet</button>
+  </form>
+  <p>{{ greetingMessage }}</p>
+</main>

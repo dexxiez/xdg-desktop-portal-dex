@@ -1,0 +1,35 @@
+// Base colors
+$background-primary: #121212; // Main app background
+$background-secondary: #1e1e1e; // Card/container backgrounds
+$background-tertiary: #2d2d2d; // Elevated components
+
+// Your accent and its variations
+$accent-primary: #ff00af; // Your specified magenta
+$accent-secondary: #ff40bf; // Lighter variant for hover states
+$accent-muted: #99006b; // Darker variant for subtle elements
+
+// Gray scale for text and UI
+$gray-100: #ffffff; // Primary text
+$gray-200: #e0e0e0; // Secondary text
+$gray-300: #bdbdbd; // Disabled text
+$gray-400: #757575; // Borders and dividers
+$gray-500: #404040; // Subtle backgrounds
+
+// Semantic colors
+$success: #00e676;
+$error: #ff1744;
+$warning: #ffa726;
+$info: #29b6f6;
+
+// Keep your spacing variables, they're solid
+$spacing-unit: 8px;
+$spacing-sm: $spacing-unit;
+$spacing-md: $spacing-unit * 2;
+$spacing-lg: $spacing-unit * 3;
+
+// Same with breakpoints
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+);
