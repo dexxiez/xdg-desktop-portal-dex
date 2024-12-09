@@ -1,37 +1,8 @@
 <div class="container">
-  <div
-    class="file-item"
-    *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
-  >
-    <div class="file-icon icon"></div>
-    <div class="file-name">File {{ i }}</div>
-  </div>
-  <div
-    class="file-item"
-    *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
-  >
-    <div class="file-icon icon"></div>
-    <div class="file-name">File {{ i }}</div>
-  </div>
-  <div
-    class="file-item"
-    *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
-  >
-    <div class="file-icon icon"></div>
-    <div class="file-name">File {{ i }}</div>
-  </div>
-  <div
-    class="file-item"
-    *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
-  >
-    <div class="file-icon icon"></div>
-    <div class="file-name">File {{ i }}</div>
-  </div>
-  <div
-    class="file-item"
-    *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
-  >
-    <div class="file-icon icon"></div>
-    <div class="file-name">File {{ i }}</div>
+  <div class="file-item" *ngFor="let item of content()">
+    <div class="file-icon icon">
+      {{ item.icon }}
+    </div>
+    <div class="file-name">{{ item.name }}</div>
   </div>
 </div>
